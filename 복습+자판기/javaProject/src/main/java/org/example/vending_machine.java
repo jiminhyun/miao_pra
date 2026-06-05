@@ -58,20 +58,23 @@ public class vending_machine {
     public static int check(int totalMoney, int menuNum) {
         switch (menuNum) {
             case 1:
-                totalMoney-=500;
+                totalMoney-=COKE;
+                System.out.println("콜라 구매 완료");
                 break;
             case 2:
-                totalMoney-=700;
+                totalMoney-=CIDER;
+                System.out.println("사이다 구매 완료");
                 break;
             case 3:
-                totalMoney-=300;
+                totalMoney-=FANTA;
+                System.out.println("환타 구매 완료");
                 break;
             case 4:
-                totalMoney-=200;
+                totalMoney-=WATER;
+                System.out.println("물 구매 완료");
                 break;
             default:
                 System.out.println("정수를 입력하세요");
-
         }
         return totalMoney;
     }

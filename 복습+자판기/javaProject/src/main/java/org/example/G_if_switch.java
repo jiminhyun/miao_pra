@@ -46,8 +46,52 @@ public class G_if_switch {
         // 여기
     }
 
+    static void exam4() {
+        System.out.println("점수를 입력해주세요.");
+        Scanner sc = new Scanner(System.in);
+        int score = sc.nextInt(); // 사용자 값을 입력받아주세요.
+
+    }
+
+    static void practice(int check) {
+        switch (check/10) {
+            case 10:
+            case 9:
+                System.out.println("A학점");
+                break;
+            case 8:
+                System.out.println("B학점");
+                break;
+            case 7:
+                System.out.println("C학점");
+                break;
+            default:
+                System.out.println("F학점");
+        }
+    }
+    static void practice2(int check) {
+        switch (check/10) {
+            case 10:
+            case 9:
+                System.out.println("A학점");
+                break;
+            case 8:
+                System.out.println("B학점");
+                break;
+            case 7:
+                System.out.println("C학점");
+                break;
+            default:
+                System.out.println("F학점");
+        }
+    }
+
+    //날짜는 CASE 묶고 동일하게 하면 된다.
+
 
     static void main() {
-        exam2();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("너의 학점을 알려주세요");
+        practice(sc.nextInt());
     }
 }
