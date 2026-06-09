@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
+//static은 객체 생성없이 에서드 영역에서 먼저 생성되기 때문에 메모리영역 생명주기가 달라서 static으로 선언된 메인 메서드에서는 static으로 선언하지 않은 메서드를 출력할려고하면 결국 오류가 발생하게 된다.
 public class i_vending_machine {
     static final int COKE = 500, CIDER = 500, FANTA = 300, WATER = 200;
     static void main(String[] args) {
