@@ -1,6 +1,6 @@
 package org.example;
 
-class Card2 {
+class G_card {
     static final int KIND_MAX = 4;
     static final int NUM_MAX = 13;
 
@@ -12,18 +12,18 @@ class Card2 {
     int kind;
     int number;
 
-    public Card2() {
+    public G_card() {
         this(SPADE, 1);
     }
 
-    public Card2(int kind, int number) {
+    public G_card(int kind, int number) {
         this.kind = kind;
         this.number = number;
     }
 
     @Override
     public String toString() {
-        String[] kinds = {"", "CLOVER", "HEART", "DIAMOND", "SPADE"};
+        String[] kinds = { "", "CLOVER", "HEART", "DIAMOND", "SPADE" };
         String numbers = "0123456789XJQK";
 
         return "kind : " + kinds[kind] + ", number : " + numbers.charAt(number);

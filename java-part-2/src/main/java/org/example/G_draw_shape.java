@@ -1,9 +1,5 @@
 package org.example;
 
-import org.example.Circle;
-import org.example.Point;
-import org.example.Triangle;
-
 public class G_draw_shape {
     public static void main(String[] args) {
         Point[] p = new Point[3];

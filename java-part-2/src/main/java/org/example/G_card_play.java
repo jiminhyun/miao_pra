@@ -37,8 +37,8 @@ package org.example;/*
 
 public class G_card_play {
     public static void main(String[] args) {
-        Deck deck = new Deck();
-        Card2 card = deck.pick(0);
+        G_deck deck = new G_deck();
+        G_card card = deck.pick(0);
         System.out.println(card);
 
         deck.shuffle();
